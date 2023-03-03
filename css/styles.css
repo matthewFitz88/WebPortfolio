@@ -50,6 +50,8 @@ p, li {
     margin-right: 1rem!important;
     background: transparent!important;
     font-family: 'Unitext Regular';
+    color: #0548F2!important;
+    border-color: #0548F2!important;
 }
 
 .main-nav-items:hover {
@@ -59,6 +61,7 @@ p, li {
 .resume-download:hover {
     background-color: #0583F2!important;
     border-color: #0583F2!important;
+    color: #FFFFFF!important;
 }
 
 /* HOME STYLES */
@@ -125,8 +128,13 @@ p, li {
 }
 
 .footer-links {
+    color: #4A4A4A!important;
     text-decoration: underline!important;
     font-family: 'Unitext Regular';
+}
+
+.footer-text {
+    color: #4A4A4A!important;
 }
 
 /* RESPONSIVE */
