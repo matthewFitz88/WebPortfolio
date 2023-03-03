@@ -1,0 +1,181 @@
+/* GENERAL STYLES */
+html {
+    background-color: #0D0D0D!important;
+    font-size: 20px!important;
+}
+
+h1 {
+    font-size: 3.5rem!important;
+    color: #000000!important;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 2.25rem!important;
+    color: #FFFFFF!important;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-size: 1.75rem!important;
+    font-family: 'Playfair Display', serif;
+}
+
+ul {
+    color: #D3D3D3!important;
+}
+
+p, li {
+    font-family: 'Unitext Regular';
+}
+
+.landing {
+    background-color: #F2F2F2;
+}
+
+/* NAVBAR STYLES */
+.main-nav, hr {
+    background-color: #BFBFBF!important;
+}
+
+.main-nav-items {
+    color: #000000!important;
+    width: 5rem!important;
+    justify-content: center;
+    text-align: right!important;
+    font-family: 'Unitext Regular';
+}
+
+.resume-download {
+    margin-right: 1rem!important;
+    background: transparent!important;
+    font-family: 'Unitext Regular';
+}
+
+.main-nav-items:hover {
+    background-color: #0583F2!important;
+}
+
+.resume-download:hover {
+    background-color: #0583F2!important;
+    border-color: #0583F2!important;
+}
+
+/* HOME STYLES */
+.intro-text, .projects-btn {
+    display: flex!important;
+    justify-content: center!important;
+    font-family: 'Unitext Regular';
+}
+
+.introduction {
+    width: 25%!important;
+}
+
+.project-button {
+    color: #000000!important;
+}
+
+/* PROJECT STYLES */
+.card {
+    background-color: #F2F2F2!important;
+}
+
+.card-height {
+    height: 100%!important;
+}
+
+.title {
+    font-family: 'Playfair Display', serif!important;
+}
+
+.project-link {
+    color: #000000!important;
+}
+
+/* SKILLS STLYES */
+.skills {
+    color: #D3D3D3!important;
+}
+
+.skills-subhead {
+    font-size: 1.25rem!important;
+    color: #0583F2!important;
+    font-family: 'Unitext Regular';
+}
+
+/* ABOUT STYLES */
+.about-text {
+    color: #D3D3D3!important;
+    text-indent: 2rem!important;
+}
+
+.about-img {
+    width: 75%!important; 
+    height: 75%!important; 
+}
+
+/* FOOTER STYLES */
+.footer {
+    background-color: #BFBFBF!important;
+}
+
+.footer-header {
+    color: #000000!important;
+}
+
+.footer-links {
+    text-decoration: underline!important;
+    font-family: 'Unitext Regular';
+}
+
+/* RESPONSIVE */
+@media (max-width: 1300px) {
+    .introduction {
+        width: 50%!important;
+    }
+}
+
+@media (max-width: 1125px) {
+    h1 {
+        font-size: 3rem!important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-img {
+        width: 100%!important;
+        height: 100%!important;
+    }
+}
+
+@media (max-width: 905px) {
+    h1 {
+        font-size: 2.5rem!important;
+    }
+}
+
+@media (max-width: 770px) {
+    .reverse-columns {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 700px) {
+    .introduction {
+        width: 75%!important;
+    }
+}
+
+@media (max-width: 600) {
+    .car-dim {
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 550px) {
+    .introduction {
+        width: 100%!important;
+    }
+}

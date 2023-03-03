@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="js/main.js"></script>
+    <title>Matts Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar main-nav is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item mr-4 main-nav-items" href="index.html">
+                    Home
+                </a>
+                <a class="navbar-item mr-4 main-nav-items" href="#projects">
+                    Projects
+                </a>
+                <a class="navbar-item mr-4 main-nav-items" href="#skills">
+                    Skills
+                </a>
+                <a class="navbar-item mr-4 main-nav-items" href="#about">
+                    About
+                </a>
+                <div class="buttons">
+                    <a class="button is-link is-outlined resume-download"
+                        href="https://1drv.ms/w/s!AkIXhqJervosjpt1a2MHmKezhGjGYg?e=g8RKGP">
+                        Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main role="main">
+        <section id="home" class="section">
+            <div class="container is-fluid landing mb-6">
+                <figure class="image mt-6">
+                    <br>
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" style="width: 256px; height: 256px; margin: auto;" alt="Matthew Fitzgerald Portfolio Headshot">
+                </figure>
+                <h1 class="title mt-4 pt-4 has-text-centered">Hello, I'm Matthew Fitzgerald</h1>
+                <div class="intro-text">
+                    <p class="has-text-centered mb-4 introduction">
+                        I'm a full stack web developer, who builds websites and applications with the user in mind.
+                    </p>
+                </div>
+                <div class="projects-btn">
+                    <a class="button is-large is-success my-6 project-button" href="#projects">Projects</a>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container is-fluid landing">
+                <h1 class="title has-text-centered">Projects</h1>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container mb-6">
+              <div class="columns is-multiline">
+                <div id="fitzfishing" class="column is-half">
+                  <div class="card card-height">
+                    <div class="card-image">
+                      <figure class="image is-5by3">
+                        <img src="images/personal_fishing_site.PNG" alt="FitzFishing Project Image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div>
+                          <p class="title is-4">FitzFishing Site</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="content">
+                        <p>
+                            This is a personal fishing report site that I made right after graduating high school, and is the first ever website that I made. 
+                            While there are some serious design issues in this site from my lack of web design experience at the time, I added it to show where 
+                            everything started. I am in the process or recreating this site now that I have a much better understanding of web development.
+                        </p>
+                      </div>
+                      <hr>
+                      <a class="button is-success project-link" href="https://muskellunge-tiger.github.io/FitzFishing/index.html">Visit Site</a>
+                    </div>
+                  </div>
+                </div>
+                <div id="accessible_site" class="column is-half">
+                    <div class="card card-height">
+                      <div class="card-image">
+                        <figure class="image is-2by1">
+                          <img src="images/accessible_site.PNG" alt="Accessible Site Project Image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div>
+                            <p class="title is-4">Full Accessibility Website</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                          <p>
+                            This is a fully accessible website that I created towards the end of my college. The big thing about this site is that it uses accessible 
+                            terminology in the code like aria labels and uses good contrast. This site was to be coded to a WCAG AA standard. Many of the accessible 
+                            features from this site are also in this portfolio site you are viewing right now. You will see from the WAVE accessibility check that
+                            there are no major issues, and this continues for the other two pages as well.
+                          </p>
+                        </div>
+                        <hr>
+                        <a class="button is-success project-link" href="https://matthewfitz88.github.io/accessible-site/">Visit Site</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cv_gen" class="column is-half">
+                    <div class="card card-height">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                          <img src="images/cv_gen.PNG" alt="CV Generator Project Image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div>
+                            <p class="title is-4">CV Generator</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                          <p>
+                            This is a simple CV Generator that was made with Django to create a simple resume based on the information that is put into the 
+                            form by the user. When the submit button is clicked a .pdf file is downloaded which contains the resume.
+                          </p>
+                        </div>
+                        <hr>
+                        <a class="button is-success project-link" href="https://github.com/matthewFitz88/CVGen">View Codebase</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="php_login" class="column is-half">
+                    <div class="card card-height">
+                      <div class="card-image">
+                        <figure class="image is-3by1">
+                          <img src="images/php_form.PNG" alt="Secure PHP Login Project Image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div>
+                            <p class="title is-4">Secure Login using PHP</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                          <p>
+                            This is a very simple log in form that uses PHP to take the user data that is inputted into the form, and adds it to a SQL a database table. 
+                            After submitting, an active account link is created and displayed to the user, and when clicked the account is activated and the randomized 
+                            activation code in the database is changed to “activated”. This code also checks to see if a username already exists in the database or not 
+                            to make sure all usernames are unique.
+                          </p>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fishing_store" class="column is-half">
+                    <div class="card card-height">
+                      <div class="card-image">
+                        <figure class="image is-3by1">
+                          <img src="images/fishing_store.PNG" alt="Fishing Store Project Image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div>
+                            <p class="title is-4">Fishing Lure Store</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                          <p>
+                            This is a fishing lure site that I made early in college. The biggest showcase for this site is the JavaScript that is used to 
+                            imitate an order form and purchasing engine.
+                          </p>
+                        </div>
+                        <hr>
+                        <a class="button is-success project-link" href="https://icarus.cs.weber.edu/~mf00798/WEB%202890/index.html">Visit Site</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="react_app" class="column is-half">
+                    <div class="card card-height">
+                      <div class="card-image">
+                        <figure class="image is-3by1">
+                          <img src="images/crud_app.PNG" alt="React CRUD App Project Image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div>
+                            <p class="title is-4">React CRUD App</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                          <p>
+                            This is a simple frontend React app that allows the user to add, edit, and delete projects from the projects route.
+                          </p>
+                        </div>
+                        <hr>
+                        <a class="button is-success project-link" href="https://astonishing-kataifi-4b6be8.netlify.app">Visit Site</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+        <section id="skills" class="section">
+            <div class="container is-fluid landing">
+                <h1 class="title has-text-centered">Skills and Education</h1>
+            </div>
+            <div class="container content mt-4 mb-6 skills">
+                <h2 class="skills">Education</h2>
+                <ul>
+                    <li>High School Diploma - Northern Utah Academy for Math Engineering and Science (NUAMES)</li>
+                    <li>Weber State University</li>
+                    <ul>
+                        <li>Bachelors of Full Stack Web Development - April 2023</li>
+                        <li>Associates of Science Web Design and User Experience</li>
+                        <li>User Experience Design Certificate of Proficiency</li>
+                    </ul>
+                </ul>
+                <h2 class="skills">Skills & Abilities</h2>
+                <ul>
+                    <li>HTML, CSS, JS</li>
+                    <li>Python</li>
+                    <li>React, Node.js, and Vue.js</li>
+                    <li>Bootstrap5 and Bulma</li>
+                    <li>SQL and MongoDB</li>
+                    <li>LAMP, MERN, Django</li>
+                    <li>Adobe XD and Figma</li>
+                    <li>Responsive and Mobile Design</li>
+                    <li>Accessibility and UX</li>
+                    <li>Communication and Working under Pressure</li>
+                </ul>
+                <h2 class="skills">Work Experience</h2>
+                <h3 class="skills-subhead">IS Intern - Management and Training Corporation - Summer 2022</h3>
+                <ul>
+                    <li>
+                        My main task was to clean up their Asset Tracker System(ATS) for their prints and copiers. This
+                        consisted of normalizing names, filling
+                        out empty fields, and checking serial numbers for hundreds of devices. By the end of my
+                        two-month internship almost the entire ATS system
+                        had been fixed to meet the company standards, and there was time for me to work on other things
+                        like getting printer page counts, normalizing
+                        laptop and desktop data in ATS, and creating budget for MTC’s sites.
+                    </li>
+                </ul>
+                <h3 class="skills-subhead">Games Front Liner and Supervisor - Lagoon Amusement Park - Seasonal 2016-2021
+                </h3>
+                <ul>
+                    <li>
+                        My biggest role at Lagoon was as a Game Supervisor were managing an area of games and employees
+                        to make sure the employees knew how their game
+                        worked, that the games were clean and stocked, and that the area ran smoothly. This made for a
+                        fast pace work environment, so I learned very quickly
+                        how to work effectively under pressure.
+                    </li>
+                </ul>
+                <h2 class="skills">Leadership and Communication</h2>
+                <ul>
+                    <li>
+                        I gained leadership experience when I was a supervisor at Lagoon. From this job, I learned how
+                        to lead and manage employees as well as work in high
+                        pressure situations and resolve employee and guest’s conflicts as quickly and effectively as
+                        possible.
+                    </li>
+                    <li>
+                        Helped with the hiring of new employees, training orientations, and specialized trainings.
+                    </li>
+                    <li>
+                        Helped with training new employees as a Front Liner and Supervisor from 2018-2021, and trained a
+                        new Supervisor in 2021.
+                    </li>
+                    <li>
+                        I learned how to work well in a team environment.
+                    </li>
+                    <li>
+                        Told by my manager I have great communication skills with guests and coworkers.
+                    </li>
+                    <li>
+                        In 2021, I was selected participate in the <strong class="has-text-success">Lagoon E.L.I.T.E
+                            Program</strong>. The leadership program is for the best
+                        Supervisors and Coordinators at Lagoon. The only way to be a part of this program is to be
+                        selected by your manager. Only 2-3 people are selected from
+                        each department a season.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container is-fluid landing">
+                <h1 class="title has-text-centered">About Me</h1>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container mb-6">
+                <div class="content columns reverse-columns">
+                    <div class="column">
+                        <p class="about-text">
+                            Hello, my name is Matthew Fitzgerald. I am currently in my final semester at Weber State
+                            University where I will graduate with a bachelors
+                            degree in Full Stack Web Development as well as a certificate of User Experience Design. I
+                            have experience working in an IT environment from an
+                            internship that I completed over the summer of 2022 at an international company called
+                            Management and Training Corporation (MTC) as well as two
+                            years of leadership experience from my supervising position at Lagoon Amusement Park.
+                        </p>
+                        <p class="about-text">
+                            I am fueled by a passion to create usable and accessible web pages, and always strive to
+                            think in the mindset of the user when creating websites
+                            and applications because I believe that having a usable website or application that is
+                            accessible to everyone should one of the top priorities of
+                            any web developer.
+                        </p>
+                        <p class="about-text">
+                            My most recent professional success came from the internship at MTC where my main task was
+                            to clean up the companies Asset Tracker System (ATS) for
+                            all their printers and copiers. This consisted of normalizing names, filling out empty
+                            information fields, and making sure that serial numbers were
+                            correct for hundreds of devices. By the end of my two month internship almost the entire ATS
+                            system had been fixed to meet the standards that the company
+                            was looking for, and there was even time for me to move onto working on even more things
+                            like getting printer page counts, normalizing laptop and desktop
+                            data in ATS, and helping create budgets for MTC’s sites.
+                        </p>
+                        <p class="about-text">
+                            Along with that I was also selected into the Lagoon E.L.I.T.E. program. E.L.I.T.E. stands
+                            for Excellent in Leadership Improving Through Education, and it is
+                            a leadership program for the best of the best management personnel at Lagoon. It is a very
+                            selective program that only has three to four people selected from
+                            each department each season, and it is built to make the best leaders at Lagoon even better
+                            for whatever job they might end up in later on in life, Lagoon or
+                            not.
+                        </p>
+                        <p class="about-text">
+                            I am currently looking to begin my professional web career after I graduate this April. I am
+                            always interested on working on challenges that will help me continue
+                            to learn and expand my web development knowledge. If you’d like to contact me with any
+                            comments or questions please reach out to mattfitzgerald100@yahoo.com!
+                        </p>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img class="is-rounded about-img" src="https://bulma.io/images/placeholders/128x128.png" alt="Matthew Fitzgerald About Headshot">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer role="contentinfo">
+        <div class="container is-fluid footer">
+            <h2 class="subtitle has-text-centered pt-0 footer-header">Matthew Fitzgerald's Portfolio</h2>
+            <div class="columns is-variable is-12">
+                <div class="column has-text-centered">
+                    <h3 class="mb-4">Navigation</h3>
+                    <a class="footer-links" href="index.html">Home</a><br>
+                    <a class="footer-links" href="#projects">Projects</a><br>
+                    <a class="footer-links" href="#skills">Skills</a><br>
+                    <a class="footer-links" href="#about">About</a><br>
+                </div>
+                <div class="column has-text-centered">
+                    <h3 class="mb-4">Projects</h3>
+                    <a class="footer-links" href="#fitzfishing">FitzFishing Site</a><br>
+                    <a class="footer-links" href="#accessible_site">Accessible Site</a><br>
+                    <a class="footer-links" href="#cv_gen">CV Generator</a><br>
+                    <a class="footer-links" href="#php_login">Secure PHP Login</a><br>
+                    <a class="footer-links" href="#fishing_store">Fishing Lure Store</a><br>
+                    <a class="footer-links" href="#react_app">React CRUD App</a><br>
+                </div>
+                <div class="column has-text-centered">
+                    <h3 class="mb-4">Contact</h3>
+                    <p>mattfitzgerald100@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
