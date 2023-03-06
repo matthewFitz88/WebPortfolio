@@ -1,6 +1,5 @@
 /* GENERAL STYLES */
 html {
-    background-color: #0D0D0D!important;
     font-size: 20px!important;
 }
 
@@ -27,6 +26,10 @@ ul {
 
 p, li {
     font-family: 'Unitext Regular';
+}
+
+strong {
+    color: #74D8A6!important;
 }
 
 .landing {
@@ -80,8 +83,15 @@ p, li {
 }
 
 /* PROJECT STYLES */
+.project-section-color {
+    background-color: #7c7c7c;
+}
+
 .card {
     background-color: #F2F2F2!important;
+    border: 1px solid;
+    padding: 1rem!important;
+    box-shadow: .5rem .5rem 1.5rem #000000!important;
 }
 
 .card-height {
@@ -92,30 +102,50 @@ p, li {
     font-family: 'Playfair Display', serif!important;
 }
 
+.card-content {
+    height: auto!important;
+}
+
 .project-link {
     color: #000000!important;
 }
 
 /* SKILLS STLYES */
+.skills-section-color {
+    background-color: #4b4b4b;
+}
+
+.skills-title {
+    color: #FFFFFF!important;
+}
+
 .skills {
     color: #D3D3D3!important;
 }
 
 .skills-subhead {
     font-size: 1.25rem!important;
-    color: #0583F2!important;
+    color: #9CCCFC!important;
     font-family: 'Unitext Regular';
 }
 
 /* ABOUT STYLES */
+.about-section-color {
+    background-color: #1a1a1a;
+}
+
+.about-title {
+    color: #BABABA!important;
+}
+
 .about-text {
     color: #D3D3D3!important;
     text-indent: 2rem!important;
 }
 
 .about-img {
-    width: 75%!important; 
-    height: 75%!important; 
+    width: 400px!important; 
+    height: 400px!important; 
 }
 
 /* FOOTER STYLES */
@@ -186,4 +216,59 @@ p, li {
     .introduction {
         width: 100%!important;
     }
+}
+
+/* HERO ANIMATIONS */
+.hero-img {
+    position: relative!important;
+    opacity: 0;
+    animation-name: hero-img;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.page-title {
+    position: relative!important;
+    opacity: 0;
+    animation-name: main-title;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;  
+}
+
+.introduction {
+    position: relative!important;
+    opacity: 0;
+    animation-name: introduction-text;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.project-button {
+    opacity: 0;
+    animation-name: hero-btn;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-img {
+    from {top: -400px;}
+    to {top: 0px; opacity: 1;}
+}
+
+@keyframes main-title {
+    from {top: -800px;}
+    to {top: 0px; opacity: 1;}
+}
+
+@keyframes introduction-text {
+    from {top: -1200px;}
+    to {top: 0px; opacity: 1;}
+}
+
+@keyframes hero-btn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
